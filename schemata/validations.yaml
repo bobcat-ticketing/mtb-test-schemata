@@ -1,0 +1,35 @@
+$schema: http://json-schema.org/schema#
+
+type: array
+items:
+  $ref: '#/definitions/validation'
+
+definitions:
+  validation:
+    type: object
+    additionalProperties: false
+    required:
+      - id
+      - time
+      - ticket_id
+      - service_id
+      - last_stop_id
+      - next_stop_id
+    properties:
+      id:
+        $ref: '#/definitions/alphanum'
+      time:
+        format: date-time
+        type: string
+      ticket_id:
+        $ref: '#/definitions/alphanum'
+      service_id:
+        $ref: '#/definitions/alphanum'
+      last_stop_id:
+        $ref: '#/definitions/alphanum'
+      next_stop_id:
+        $ref: '#/definitions/alphanum'
+  alphanum:
+    anyOf:
+     - type: string
+     - type: number

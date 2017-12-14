@@ -1,0 +1,48 @@
+---
+
+stops:
+  - id: 2037
+    name: Kapellsjön
+    geopos:
+      lat: 57.770351
+      long: 12.255959
+    tickleEnv:
+      - pid: 1
+        zone: 820
+        stopArea: 7438220
+      - pid: 42
+        zone: 1
+        stopArea: 1337
+  - id: 2040
+    name: Långtbortistan
+    geopos:
+      lat: 57.5503
+      long: 12.2255
+    tickleEnv:
+      - pid: 1
+        zone: [822,823]
+        stopArea: 7438220
+      - pid: 42
+        zone: 1
+        stopArea: 1338
+
+services:
+  - id: 10
+    name: Vara-expressen
+    tickleEnv:
+      - pid: 42
+        service: 10
+    stopIds:
+      - 1
+      - 2
+      - 3
+      - 4
+  - id: 11
+    tickleEnv:
+      - pid: 42
+        service: 11
+    stopIds:
+      - 1
+      - 2
+      - 5
+      - 6

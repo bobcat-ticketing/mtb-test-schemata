@@ -1,0 +1,14 @@
+---
+  
+- id: 1
+  description: "30 days zone 1,2,3"
+  tickle: "1: 20180101T000000/P30D & 1:zone:[1,2,3]"
+
+- id: 2
+  description: "30 days zone 1"
+  tickle: "1: 20180101T000000/P30D & 1:zone:[1]"
+
+- id: 3
+  description: "30 days zone 1"
+  tickle: "1: 20180101T000000/P30D & (!#pkh)"
+  serial: 21

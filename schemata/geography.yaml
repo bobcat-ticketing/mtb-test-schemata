@@ -1,0 +1,111 @@
+$schema: http://json-schema.org/schema#
+
+type: object
+additionalProperties: false
+required:
+  - stops
+properties:
+  stops:
+    type: array
+    items:
+      $ref: '#/definitions/stop'
+  services:
+    type: array
+    items:
+      $ref: '#/definitions/service'
+
+definitions:
+  stop:
+    type: object
+    additionalProperties: false
+    required:
+      - id
+      - tickleEnv
+    properties:
+      id:
+        $ref: '#/definitions/alphanum'
+      name:
+        type: string
+      geopos:
+        $ref: '#/definitions/geopos'
+      tickleEnv:
+        $ref: '#/definitions/tickleEnvStop'
+  service:
+    type: object
+    additionalProperties: false
+    required:
+      - id
+    properties:
+      id:
+        $ref: '#/definitions/alphanum'
+      name:
+        type: string
+      tickleEnv:
+        $ref: '#/definitions/tickleEnvService'
+      stopIds:
+        type: array
+        items:
+          anyOf:
+           - type: string
+           - type: number
+  tickleEnvStop:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      required:
+        - pid
+        - stopArea
+      properties:
+        pid:
+         $ref: '#/definitions/str_or_num'
+        stopArea:
+         $ref: '#/definitions/str_or_num_array'
+        zone:
+         $ref: '#/definitions/str_or_num_array'
+  tickleEnvService:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      required:
+        - pid
+        - service
+      properties:
+        pid:
+          $ref: '#/definitions/str_or_num'
+        service:
+          $ref: '#/definitions/str_or_num'
+  alphanum:
+    anyOf:
+     - type: string
+     - type: number
+  str_or_num:
+    anyOf:
+     - type: string
+       format: int64
+     - type: number
+  str_or_num_array:
+    anyOf:
+     - type: string
+       format: int64
+     - type: number
+     - type: array
+       items:
+        type: string
+        format: int64
+     - type: array
+       items:
+        type: number
+  geopos:
+    title: WGS84 coordinate
+    type: object
+    additionalProperties: false
+    required:
+      - lat
+      - long
+    properties:
+      lat:
+        type: number
+      long:
+        type: number

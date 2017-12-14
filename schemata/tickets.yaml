@@ -1,0 +1,32 @@
+$schema: http://json-schema.org/schema#
+
+type: array
+items:
+  $ref: '#/definitions/ticket'
+
+definitions:
+  ticket:
+    type: object
+    additionalProperties: false
+    required:
+      - id
+      - tickle
+    properties:
+      id:
+        $ref: '#/definitions/alphanum'
+      description:
+        type: string
+      tickle:
+        type: string
+      serial:
+        type: integer
+        format: int64
+  alphanum:
+    anyOf:
+     - type: string
+     - type: number
+  str_or_num:
+    anyOf:
+     - type: string
+       format: int64
+     - type: number
