@@ -1,3 +1,3 @@
-This repository contains JSON schemata (written in YAML) for describing MTB interoperability tests.
+This repository contains JSON schemata (written in YAML) for describing MTB interoperability tests (written in YAML or JSON).
 
-Some example definitions can be found in the `examples` directory.
+Example datasets can be found in the `examples` directory.
