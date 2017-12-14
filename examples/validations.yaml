@@ -6,3 +6,12 @@
   service_id: 10
   last_stop_id: 2037
   next_stop_id: 2040
+  expect_valid: True
+
+- id: 3
+  time: 20170101T120000
+  ticket_id: 1
+  service_id: 10
+  last_stop_id: 2037
+  next_stop_id: 2040
+  expect_valid: False

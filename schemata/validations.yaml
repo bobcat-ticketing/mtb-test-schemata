@@ -29,6 +29,8 @@ definitions:
         $ref: '#/definitions/alphanum'
       next_stop_id:
         $ref: '#/definitions/alphanum'
+      expect_valid:
+        type: boolean
   alphanum:
     anyOf:
      - type: string
