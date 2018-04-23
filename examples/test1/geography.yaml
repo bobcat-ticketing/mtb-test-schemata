@@ -1,0 +1,153 @@
+---
+
+stops:
+  - id: 9021007064127000
+    name: Hjortsberga, Alvesta
+    geopos:
+      lat: 56.9146688198268
+      long: 14.455336398534195
+    tickleEnv:
+    - pid: 23
+      stopArea: 64127
+      zone: 721
+  - id: 9021007064177000
+    name: Norra Råsen
+    geopos:
+      lat: 56.90633670504354
+      long: 14.465552214828634
+    tickleEnv:
+    - pid: 23
+      stopArea: 64177
+      zone: 721
+  - id: 9021007064053000
+    name: Forsa vägskäl
+    geopos:
+      lat: 56.90841904037426
+      long: 14.473833481432955
+    tickleEnv:
+    - pid: 23
+      stopArea: 64053
+      zone: 721
+  - id: 9021007064015000
+    name: Hälleberg
+    geopos:
+      lat: 56.913221965043256
+      long: 14.4829551831813
+    tickleEnv:
+    - pid: 23
+      stopArea: 64015
+      zone: 721
+  - id: 9021007064052000
+    name: Forsa Östra
+    geopos:
+      lat: 56.914664536771625
+      long: 14.492000265071205
+    tickleEnv:
+    - pid: 23
+      stopArea: 64052
+      zone: 721
+  - id: 9021007064140000
+    name: Odlingsvägen
+    geopos:
+      lat: 56.90427198302819
+      long: 14.53614248720882
+    tickleEnv:
+    - pid: 23
+      stopArea: 64140
+      zone: 721
+  - id: 9021007064139000
+    name: Sköldstavägen
+    geopos:
+      lat: 56.90415211851201
+      long: 14.547373900139794
+    tickleEnv:
+    - pid: 23
+      stopArea: 64139
+      zone: 721
+  - id: 9021007064149000
+    name: Alvesta Folkets hus
+    geopos:
+      lat: 56.90076464930069
+      long: 14.55346210593139
+    tickleEnv:
+    - pid: 23
+      stopArea: 64149
+      zone: 721
+  - id: 9021007080014000
+    name: Växjö resecentrum
+    geopos:
+      lat: 56.876998855252516
+      long: 14.805060410954395
+    tickleEnv:
+    - pid: 23
+      stopArea: 80014
+      zone: 701
+  - id: 9021007064204000
+    name: Alvesta resecentrum
+    geopos:
+      lat: 56.898911988635845
+      long: 14.556790101774979
+    tickleEnv:
+    - pid: 23
+      stopArea: 64204
+      zone: 721
+  - id: 9021007065130000
+    name: Älmhult station
+    geopos:
+      lat: 56.550786885120175
+      long: 14.137501122289567
+    tickleEnv:
+    - pid: 23
+      stopArea: 65130
+      zone: 780
+  - id: 9021012073005000
+    name: Osby station
+    geopos:
+      lat: 56.380586402561406
+      long: 13.995503719280434
+    tickleEnv:
+    - pid: 10
+      stopArea: 73005
+      zone: 370
+    tickleEnv:
+    - pid: 23
+      stopArea: 73005
+      zone: 370
+  - id: 9021012093070000
+    name: Hässleholm C
+    geopos:
+      lat: 56.15804048792545
+      long: 13.76326833743074
+    tickleEnv:
+    - pid: 10
+      stopArea: 93070
+      zone: 350
+    - pid: 23
+      stopArea: 93070
+      zone: 350
+
+services:
+  - id: 270
+    tickleEnv:
+      - pid: 23
+        service: 270
+    stopIds:
+      - 9021007064127000
+      - 9021007064177000
+      - 9021007064053000
+      - 9021007064015000
+      - 9021007064052000
+      - 9021007064140000
+      - 9021007064139000
+      - 9021007064149000
+      - 9021007064204000
+  - id: 1065
+    tickleEnv:
+      - pid: 23
+        service: 1065
+    stopIds:
+      - 9021007080014000
+      - 9021007064204000
+      - 9021007065130000
+      - 9021012073005000
+      - 9021012093070000
