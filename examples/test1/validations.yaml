@@ -23,3 +23,19 @@
   last_stop_id: 9021012073005000
   next_stop_id: 9021012093070000
   expect_valid: True
+
+- id: 3
+  time: 20180423T150200
+  ticket_id: 2
+  service_id: 1064
+  last_stop_id: 9021012073005000
+  next_stop_id: 9021012093070000
+  expect_valid: False
+
+- id: 4
+  time: 20180423T135500
+  ticket_id: 2
+  service_id: 270
+  last_stop_id: 9021007064127000
+  next_stop_id: 9021007064177000
+  expect_valid: True

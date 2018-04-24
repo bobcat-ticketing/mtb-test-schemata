@@ -1,0 +1,9 @@
+---
+  
+- id: 1
+  description: "Hela skåne"
+  tickle: "10: @20180413T0821Z/20180513T1022Z & #scania"
+
+- id: 2
+  description: "Kronoberg runt (test)"
+  tickle: "23: @20180101T000000Z/P12M"
