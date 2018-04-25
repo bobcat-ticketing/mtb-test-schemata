@@ -143,6 +143,8 @@ services:
       - 9021007064204000
   - id: 1065
     tickleEnv:
+      - pid: 10
+        service: 1065
       - pid: 23
         service: 1065
     stopIds:
