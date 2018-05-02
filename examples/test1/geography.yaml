@@ -109,7 +109,6 @@ stops:
     - pid: 10
       stopArea: 73005
       zone: 370
-    tickleEnv:
     - pid: 23
       stopArea: 73005
       zone: 370
