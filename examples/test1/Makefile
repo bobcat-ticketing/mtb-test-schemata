@@ -7,3 +7,6 @@ check:
 	$(VALIDATOR) --input tickets.yaml $(SCHEMADIR)/tickets.yaml
 	$(VALIDATOR) --input validations.yaml $(SCHEMADIR)/validations.yaml
 	$(VALIDATOR) --input ticklemacros.json $(SCHEMADIR)/ticklemacros.yaml
+
+bobcat:
+	python3 ../../../mtb/examples/interop.py
