@@ -6,7 +6,7 @@
   service_id: 270
   last_stop_id: 9021007064127000
   next_stop_id: 9021007064177000
-  expect_valid: True
+  expect_valid: False
 
 - id: 2
   time: 20180423T143100
@@ -14,7 +14,7 @@
   service_id: 991
   last_stop_id: 9021007080014000
   next_stop_id: 9021007064204000
-  expect_valid: True
+  expect_valid: False
 
 - id: 3
   time: 20180423T150200
