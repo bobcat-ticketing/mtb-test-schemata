@@ -11,7 +11,7 @@
 - id: 2
   time: 20180423T143100
   ticket_id: 1
-  service_id: 1065
+  service_id: 991
   last_stop_id: 9021007080014000
   next_stop_id: 9021007064204000
   expect_valid: True
@@ -19,7 +19,7 @@
 - id: 3
   time: 20180423T150200
   ticket_id: 1
-  service_id: 1065
+  service_id: 991
   last_stop_id: 9021012073005000
   next_stop_id: 9021012093070000
   expect_valid: True
@@ -27,7 +27,7 @@
 - id: 3
   time: 20180423T150200
   ticket_id: 2
-  service_id: 1065
+  service_id: 991
   last_stop_id: 9021012073005000
   next_stop_id: 9021012093070000
   expect_valid: False

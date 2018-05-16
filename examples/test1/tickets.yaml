@@ -5,5 +5,5 @@
   tickle: "10: @20180413T0821Z/20180513T1022Z & #scania"
 
 - id: 2
-  description: "Kronoberg runt (test)"
-  tickle: "23: @20180101T000000Z/P12M & 23:zone:[721,701,780,370]"
+  description: "Kronoberg"
+  tickle: "23: @20180101T000000Z/P12M & 23:zone:[721,725,726,781,780]"
